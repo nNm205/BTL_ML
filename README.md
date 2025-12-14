@@ -177,8 +177,46 @@ python scripts/03_evaluate.py --skip_robustify
 - **Pair Behaviors Avg F1**: 0.3974
 
 ### Per-Behavior Performance
-
-(Chi tiết được in ra khi chạy `03_evaluate.py`)
+------------------------------------------------------------
+Action               Mode       Count      Avg F1    
+------------------------------------------------------------
+allogroom            pair       17         0.1756    
+approach             pair       258        0.3867    
+attack               pair       389        0.5623    
+attemptmount         pair       42         0.0720    
+avoid                pair       136        0.1504    
+biteobject           single     16         0.0196    
+chase                pair       117        0.1614    
+chaseattack          pair       22         0.1789    
+climb                single     30         0.2666    
+defend               pair       64         0.3966    
+dig                  single     60         0.1498    
+disengage            pair       20         0.4422    
+dominance            pair       6          0.6304    
+dominancegroom       pair       14         0.1594    
+dominancemount       pair       63         0.3964    
+ejaculate            pair       3          0.4706    
+escape               pair       125        0.3186    
+exploreobject        single     17         0.0370    
+flinch               pair       22         0.0864    
+follow               pair       53         0.4665    
+freeze               single     9          0.3260    
+genitalgroom         single     17         0.5062    
+huddle               single     11         0.4678    
+intromit             pair       81         0.7206    
+mount                pair       247        0.6123    
+rear                 single     137        0.2406    
+reciprocalsniff      pair       42         0.6827    
+rest                 single     21         0.1415    
+run                  single     19         0.0000    
+selfgroom            single     108        0.1751    
+shepherd             pair       16         0.4169    
+sniff                pair       621        0.6358    
+sniffbody            pair       109        0.5094    
+sniffface            pair       119        0.5476    
+sniffgenital         pair       462        0.4838    
+submit               pair       23         0.2642    
+tussle               pair       6          0.3159    
 
 ## 🔧 Troubleshooting
 
