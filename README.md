@@ -222,7 +222,7 @@ python scripts/03_evaluate.py --skip_robustify
 
 - [XGBoost Documentation](https://xgboost.readthedocs.io/)
 - [Polars Documentation](https://pola-rs.github.io/polars/)
-- [MABe Challenge](https://www.aicrowd.com/challenges/mabe-2022-track-1)
+- [MABe Challenge - Social Action Recognition in Mice](https://www.kaggle.com/competitions/MABe-mouse-behavior-detection)
 
 ## 👨‍💻 Liên hệ
 
