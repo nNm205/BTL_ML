@@ -218,35 +218,6 @@ python scripts/03_evaluate.py --skip_robustify
 | submit            | pair   | 23    | 0.2642 |
 | tussle            | pair   | 6     | 0.3159 |
 
-## 🔧 Troubleshooting
-
-### GPU Training Failed
-
-Nếu GPU training thất bại, hệ thống sẽ tự động fallback sang CPU. Để kiểm tra CUDA:
-
-```python
-import xgboost as xgb
-print(xgb.train.__doc__)  # Check xgboost version
-```
-
-### Memory Issues
-
-Nếu bị out of memory:
-
-- Dùng `--mode sequential` khi tạo features
-- Giảm `ROLLING_WINDOWS` trong `config.py`
-- Giảm `XGB_MAX_BIN` xuống 32 hoặc 16
-
-### Missing Features
-
-Nếu một số video không có features:
-
-```bash
-python scripts/01_prepare_features.py --check_only
-```
-
-Sau đó chạy lại bước 1 cho các video bị thiếu.
-
 ## 📚 Tài liệu tham khảo
 
 - [XGBoost Documentation](https://xgboost.readthedocs.io/)
